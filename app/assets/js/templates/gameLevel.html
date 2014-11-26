@@ -1,0 +1,14 @@
+<div>
+	<div>
+		<p class="timer">15</p>
+	</div>
+	<div>
+		<p><%= image %></p>
+		<img src="http://placehold.it/100x100" alt="<%= image %>" title="<%= image %>">
+	</div>
+	<ul>
+		<% _.each(variants, function (variant) { %>
+			<li class="answer" data-answer="<%= variant %>"><%= variant %></li>
+		<% }) %>
+	</ul>
+</div>
